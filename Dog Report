@@ -1,0 +1,19 @@
+class Dog:
+    species = 'mammal'
+    def __init__(self,breed,colour,name,age):
+        self.breed = breed
+        self.colour = colour
+        self.name = name
+        self.age = age
+        
+    def age_(self):
+        if self.age > 5:
+            print("Dog is Old!")
+        else:
+            print("Dog is young!")
+            
+    def spots(self):
+        if self.breed == "Huskie" or self.breed == "Beegle" or self.breed == "Shepherd":
+            print(f"{self.name} has spots!")
+        else:
+            print(f"{self.name} has no spots!")
